@@ -1,0 +1,60 @@
+{
+  "name": "next-table",
+  "version": "0.0.1",
+  "description": "A Super dynamic Table / Dashboard components that have a beautiful UI, built-in filters and pagination, comes with an optional side panel, that shows selected row data!",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karanVR/next-table-npm.git"
+  },
+  "keywords": [
+    "table",
+    "nextjs"
+  ],
+  "author": "Karan veer Raghuvanshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karanVR/next-table-npm/issues"
+  },
+  "homepage": "https://github.com/karanVR/next-table-npm#readme",
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "tailwindcss": "^3.4.9",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-table": "^8.20.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.427.0",
+    "radix-ui": "^1.0.1",
+    "react-day-picker": "^9.0.8",
+    "react-icons": "^5.3.0",
+    "shadcn-ui": "^0.8.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "peerDependencies": {
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-table": "^8.20.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.427.0",
+    "radix-ui": "^1.0.1",
+    "react-day-picker": "^9.0.8",
+    "react-icons": "^5.3.0",
+    "shadcn-ui": "^0.8.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
