@@ -24,6 +24,7 @@ const App: React.FC = () => {
         filterInput={filterField}
         setFilterinput={setFilterinput as any}
         showDownloadButton
+        isBorder
       />
     </div>
   )
