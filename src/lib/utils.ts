@@ -1,50 +1,50 @@
-import { type ClassValue, clsx } from "clsx";
-import { twMerge } from "tailwind-merge";
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
+  return twMerge(clsx(inputs))
 }
 
 export function generate15RandomString() {
-  const length = 15;
-  let result = "3"; // Start with '3'
-  const characters = "0123456789";
+  const length = 15
+  let result = '3' // Start with '3'
+  const characters = '0123456789'
 
   for (let i = 1; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * characters.length);
-    result += characters[randomIndex];
+    const randomIndex = Math.floor(Math.random() * characters.length)
+    result += characters[randomIndex]
   }
 
-  return result;
+  return result
 }
 
 export const transformObject = (inputObject: any) => {
   return Object.keys(inputObject).map((key) => ({
     label: inputObject[key].address,
     value: key,
-  }));
-};
+  }))
+}
 
 export const transformLabel = (label: string): string | null => {
-  if (!label) return "";
-  else if (label === "contact") {
-    return "Contact Number";
-  } else if (label === "imei") {
-    return "Serial/IMEI No.";
+  if (!label) return ''
+  else if (label === 'contact') {
+    return 'Contact Number'
+  } else if (label === 'imei') {
+    return 'Serial/IMEI No.'
   }
   // else if (label === "purchase_date") {
   //   return "Date of Purchase";
   // }
   else if (
-    label === "sno" ||
-    label === "product" ||
-    label === "plan_type" ||
-    label === "purchase_date"
+    label === 'sno' ||
+    label === 'product' ||
+    label === 'plan_type' ||
+    label === 'purchase_date'
   ) {
-    return null;
+    return null
   }
   return label
-    .split("_")
+    .split('_')
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-};
+    .join(' ')
+}
