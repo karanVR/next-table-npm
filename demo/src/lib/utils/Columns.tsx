@@ -1,7 +1,7 @@
 'use client'
 
-import { TextSmall } from '@/components/ui/typography'
-import { cn } from '@/lib/utils'
+// import { text } from '@/components/ui/typography'
+import { cn } from '../utils/utils'
 import { ColumnDef } from '@tanstack/react-table'
 import { format } from 'date-fns'
 import { FaCircle } from 'react-icons/fa'
@@ -23,64 +23,64 @@ export const columns: ColumnDef<SamsungColumns>[] = [
     accessorKey: 'sno',
     // @ts-expect-error
     header: (
-      <TextSmall className="text-sm text-[#4C4D4E] font-SamsungSharpSans font-bold">S.No</TextSmall>
+      <text className="text-sm text-[#4C4D4E] font-SamsungSharpSans font-bold">S.No</text>
     ),
     cell: ({ row, index }: any) => {
-      return <TextSmall className="font-bold">{row.index + 1}</TextSmall>
+      return <text className="font-bold">{row.index + 1}</text>
     },
   },
   {
     // accessorKey: "name",
     accessorKey: 'name',
     // @ts-expect-error
-    header: <TextSmall className="text-[#4C4D4E] font-SamsungSharpSans font-bold">Name</TextSmall>,
+    header: <text className="text-[#4C4D4E] font-SamsungSharpSans font-bold">Name</text>,
     cell: ({ row }: any) => {
       // const name = row.getValue("name");
-      return <TextSmall className="font-light">{row.original.customer.name}</TextSmall>
+      return <text className="font-light">{row.original.customer.name}</text>
     },
   },
   {
     accessorKey: 'contact',
     // @ts-expect-error
     header: (
-      <TextSmall className="text-[#4C4D4E] font-SamsungSharpSans font-bold">
+      <text className="text-[#4C4D4E] font-SamsungSharpSans font-bold">
         Contact Number
-      </TextSmall>
+      </text>
     ),
     cell: ({ row }: any) => {
       const contact = row.getValue('contact')
-      return <TextSmall className="font-light">{row.original.customer.phone}</TextSmall>
+      return <text className="font-light">{row.original.customer.phone}</text>
     },
   },
   {
     accessorKey: 'imei',
     // @ts-expect-error
     header: (
-      <TextSmall className="text-[#4C4D4E] font-SamsungSharpSans font-bold">
+      <text className="text-[#4C4D4E] font-SamsungSharpSans font-bold">
         Serial/IMEI No.
-      </TextSmall>
+      </text>
     ),
     cell: ({ row }: any) => {
       const imei = row.getValue('imei')
-      return <TextSmall className="font-light">{row.original.items[0].imeinumber}</TextSmall>
+      return <text className="font-light">{row.original.items[0].imeinumber}</text>
     },
   },
   {
     accessorKey: 'purchase_date',
     // @ts-expect-error
     header: (
-      <TextSmall className="text-[#4C4D4E] font-SamsungSharpSans font-bold">
+      <text className="text-[#4C4D4E] font-SamsungSharpSans font-bold">
         Date of Purchase
-      </TextSmall>
+      </text>
     ),
     cell: ({ row }: any) => {
       const purchase_date = row.getValue('purchase_date')
       return (
-        <TextSmall className="font-light">
+        <text className="font-light">
           {' '}
           {format(row.original.sold_on, 'dd-MM-yyyy')}
           {/* {format(row.original.items[0].purchasedate, "dd-MM-yyyy HH:mm:ssXXX")} */}
-        </TextSmall>
+        </text>
       )
     },
   },
@@ -88,7 +88,7 @@ export const columns: ColumnDef<SamsungColumns>[] = [
     accessorKey: 'status',
     // @ts-expect-error
     header: (
-      <TextSmall className="text-[#4C4D4E] font-SamsungSharpSans font-bold">Status</TextSmall>
+      <text className="text-[#4C4D4E] font-SamsungSharpSans font-bold">Status</text>
     ),
     cell: ({ row }: any) => {
       const status: string | number = row.getValue('status')
@@ -102,7 +102,7 @@ export const columns: ColumnDef<SamsungColumns>[] = [
             )}
           >
             <FaCircle size="8px" />
-            <TextSmall>{status === 4 ? 'Pending' : status === 1 ? 'Active' : ''}</TextSmall>
+            <text>{status === 4 ? 'Pending' : status === 1 ? 'Active' : ''}</text>
           </div>
         )
       }
@@ -113,23 +113,23 @@ export const columns: ColumnDef<SamsungColumns>[] = [
     // @ts-expect-error
     header: (
       <div className="text-sm w-[7vw] text-[#4C4D4E] ">
-        <TextSmall className="font-bold font-SamsungSharpSans ">Plan Type</TextSmall>
+        <text className="font-bold font-SamsungSharpSans ">Plan Type</text>
       </div>
     ),
     cell: ({ row }: any) => {
       const plan_type = row.getValue('plan_type')
-      return <TextSmall className="font-light">{row.original.display_plan_name}</TextSmall>
+      return <text className="font-light">{row.original.display_plan_name}</text>
     },
   },
   {
     accessorKey: 'product',
     // @ts-expect-error
     header: (
-      <TextSmall className="text-[#4C4D4E] font-SamsungSharpSans font-bold">Product</TextSmall>
+      <text className="text-[#4C4D4E] font-SamsungSharpSans font-bold">Product</text>
     ),
     cell: ({ row }: any) => {
       const product = row.getValue('product')
-      return <TextSmall className="font-light">{row.original.items[0].model}</TextSmall>
+      return <text className="font-light">{row.original.items[0].model}</text>
     },
   },
 ]

@@ -7,6 +7,8 @@ import path from 'path'
 import tsConfigPaths from 'vite-tsconfig-paths'
 // const { EsLinter, linterPlugin } = EsLint
 import * as packageJson from './package.json'
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 // https://vitejs.dev/config/
 export default defineConfig((configEnv) => ({
   resolve: {
@@ -25,6 +27,11 @@ export default defineConfig((configEnv) => ({
       include: ['src/'],
     }),
   ],
+  css: {
+    postcss: {
+      plugins: [tailwindcss(), autoprefixer()],
+    },
+  },
   build: {
     lib: {
       entry: resolve('src', 'index.ts'),
@@ -33,7 +40,7 @@ export default defineConfig((configEnv) => ({
       fileName: (format) => `next-table.${format}.js`,
     },
     rollupOptions: {
-      external: [...Object.keys(packageJson.peerDependencies)],
+      external: ['react', 'react-dom','react/jsx-runtime',...Object.keys(packageJson.peerDependencies)],
       output: {
         globals: {
           react: 'React',

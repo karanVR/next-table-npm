@@ -11,3 +11,4 @@ export type SamsungColumns = {
     product?: string;
 };
 export declare const columns: ColumnDef<SamsungColumns>[];
+export default columns;
