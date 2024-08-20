@@ -25,10 +25,6 @@ const config = {
       transitionProperty: {
         height: 'height',
       },
-      fontFamily: {
-        SamsungSharpSans: ['SamsungSharpSans'],
-        Samsungone: ['Samsungone'],
-      },
       colors: {
         accent: '#217AFF',
         'yellow-1': '#FFF8E3',

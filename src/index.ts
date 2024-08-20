@@ -1,1 +1,3 @@
-export { DataTable } from './Table'
+import './styles/tailwind.css';
+
+export * from './Table';
