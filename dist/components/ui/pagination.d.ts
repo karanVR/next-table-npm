@@ -1,5 +1,5 @@
 import { ButtonProps } from './button';
-import * as React from 'react';
+import * as React from "react";
 declare const Pagination: {
     ({ className, ...props }: React.ComponentProps<"nav">): import("react/jsx-runtime").JSX.Element;
     displayName: string;
@@ -8,7 +8,7 @@ declare const PaginationContent: React.ForwardRefExoticComponent<Omit<React.Deta
 declare const PaginationItem: React.ForwardRefExoticComponent<Omit<React.DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>, "ref"> & React.RefAttributes<HTMLLIElement>>;
 type PaginationLinkProps = {
     isActive?: boolean;
-} & Pick<ButtonProps, 'size'> & React.ComponentProps<'a'>;
+} & Pick<ButtonProps, "size"> & React.ComponentProps<"a">;
 declare const PaginationLink: {
     ({ className, isActive, size, ...props }: PaginationLinkProps): import("react/jsx-runtime").JSX.Element;
     displayName: string;

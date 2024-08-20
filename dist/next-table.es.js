@@ -77,15 +77,23 @@ const Gn = ({ className: e, ...t }) => /* @__PURE__ */ d(
   }
 );
 Gn.displayName = "Pagination";
-const qn = c.forwardRef(
-  ({ className: e, ...t }, n) => /* @__PURE__ */ d("ul", { ref: n, className: A("flex flex-row items-center gap-1", e), ...t })
-);
+const qn = c.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ d(
+  "ul",
+  {
+    ref: n,
+    className: A("flex flex-row items-center gap-1", e),
+    ...t
+  }
+));
 qn.displayName = "PaginationContent";
-const ct = c.forwardRef(
-  ({ className: e, ...t }, n) => /* @__PURE__ */ d("li", { ref: n, className: A("", e), ...t })
-);
+const ct = c.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ d("li", { ref: n, className: A("", e), ...t }));
 ct.displayName = "PaginationItem";
-const Zn = ({ className: e, isActive: t, size: n = "icon", ...r }) => /* @__PURE__ */ d(
+const Zn = ({
+  className: e,
+  isActive: t,
+  size: n = "icon",
+  ...r
+}) => /* @__PURE__ */ d(
   "a",
   {
     "aria-current": t ? "page" : void 0,

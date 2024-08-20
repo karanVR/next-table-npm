@@ -1,5 +1,5 @@
 {
-  "name": "next-table",
+  "name": "dynamic-data-table",
   "version": "0.0.1",
   "description": "A Super dynamic Table / Dashboard components that have a beautiful UI, built-in filters and pagination, comes with an optional side panel, that shows selected row data!",
   "main": "./dist/next-table.umd.js",
@@ -22,6 +22,9 @@
   },
   "keywords": [
     "table",
+    "component",
+    "dashboard",
+    "table component",
     "nextjs"
   ],
   "author": "Karan veer Raghuvanshi",
@@ -66,20 +69,20 @@
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@tanstack/react-table": "^8.20.1",
+    "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "lucide-react": "^0.427.0",
+    "postcss": "^8.4.41",
     "radix-ui": "^1.0.1",
     "react": "^18.3.1",
     "react-day-picker": "^9.0.8",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
     "shadcn-ui": "^0.8.0",
-    "tailwindcss-animate": "^1.0.7",
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "^3.4.10",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41"
+    "tailwindcss-animate": "^1.0.7"
   }
 }
