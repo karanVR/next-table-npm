@@ -1,7 +1,7 @@
 {
   "name": "pretty-react-table-kit",
-  "version": "0.0.4",
-  "description": "A Super dynamic Table / Dashboard components that have a beautiful UI, built-in filters and pagination, comes with an optional side panel, that shows selected row data!",
+  "version": "0.0.6",
+  "description": "A Super dynamic Table / Dashboard components that have a beautiful UI made in tailwindcss, built-in filters(individual and global) and pagination, comes with an optional side panel, that shows selected row data! Just throw in your data and use",
   "main": "./dist/next-table.umd.js",
   "module": "./dist/next-table.es.js",
   "types": "./dist/index.d.ts",
@@ -30,12 +30,12 @@
   "author": "Karan veer Raghuvanshi <karanveerraghuvanshi@gmail.com> (https://github.com/karanVR)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/karanVR/next-table-npm/issues"
+    "url": "https://github.com/karanVR/pretty-react-table-kit/issues"
   },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/karanVR/next-table-npm#readme",
+  "homepage": "https://github.com/karanVR/pretty-react-table-kit#readme",
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@tanstack/react-table": "^8.20.1",
@@ -84,5 +84,8 @@
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "^3.4.10",
     "tailwindcss-animate": "^1.0.7"
+  },
+  "dependencies": {
+    "pretty-react-table-kit": "^0.0.5"
   }
 }

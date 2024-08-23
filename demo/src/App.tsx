@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { DataTable } from 'dynamic-data-table'
+import React, { useEffect, useState } from 'react'
+import { DataTable } from 'pretty-react-table-kit'
 import columns from './lib/utils/Columns'
 
 const App: React.FC = () => {
@@ -9,6 +9,8 @@ const App: React.FC = () => {
   })
   const [filterField, setFilterField] = useState<string>('')
   const [filterInput, setFilterinput] = useState<string>('')
+
+  const [dateRange, setDateRange] = useState<{ from_date: ''; to_date: '' } | undefined>(undefined)
 
   const data = [
     {
@@ -1127,9 +1129,17 @@ const App: React.FC = () => {
     },
   ]
 
+  const fetchData = () => {
+    // your function to fetch api data, will run whenever the page changes
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [pagination])
+
   return (
-    <div>
-      <h1 className="p-4 bg-violet-200">Hello, Welcome to Table Component!!</h1>
+    <div className="p-4">
+      <h1 className="p-4 bg-violet-200 mb-8">Hello, Welcome to Pretty Table Component!!</h1>
       <DataTable
         columns={columns}
         data={data}
@@ -1146,6 +1156,8 @@ const App: React.FC = () => {
         setFilterinput={setFilterinput as any}
         showDownloadButton
         isSideSheet
+        dateRange={dateRange}
+        setDateRange={setDateRange}
       />
     </div>
   )
