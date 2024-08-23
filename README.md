@@ -27,7 +27,7 @@ Here is an example of the package in action:
 
 To install the package, run:
 
-````bash
+```bash
 npm i pretty-react-table-kit
 ```
 
@@ -50,15 +50,11 @@ Add the following to your `postcss.config.js` file:
 
 ```js
 module.exports = {
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
-};
+  plugins: [require('tailwindcss'), require('autoprefixer')],
+}
+```
 
-````
-
-Add the following to your tailwind.config.ts file:
+Add the following to your `tailwind.config.ts` file:
 
 ```js
 module.exports = {
