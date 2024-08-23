@@ -61,3 +61,29 @@ module.exports = {
   plugins: [require('tailwindcss-animate')],
 }
 ```
+
+# Example Component usage
+
+send pagination and filters as react states
+
+```js
+<DataTable
+    columns={columns}
+    data={data}
+    totalCount={data.length}
+    isDataLoading={false}
+    showFilter
+    showPagination
+    isBorder
+    pagination={pagination}
+    setPagination={setPagination}
+    filterField={filterField}
+    setFilterField={setFilterField}
+    filterInput={filterInput}
+    setFilterinput={setFilterinput as any}
+    showDownloadButton
+    isSideSheet
+    dateRange={dateRange}
+    setDateRange={setDateRange}
+    />
+```

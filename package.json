@@ -1,6 +1,6 @@
 {
   "name": "pretty-react-table-kit",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A Super dynamic Table / Dashboard components that have a beautiful UI made in tailwindcss, built-in filters(individual and global) and pagination, comes with an optional side panel, that shows selected row data! Just throw in your data and use",
   "main": "./dist/next-table.umd.js",
   "module": "./dist/next-table.es.js",
