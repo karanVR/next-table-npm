@@ -1129,7 +1129,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <h1 className="p-4 bg-red-200">Hello, Welcome to Table Component!!</h1>
+      <h1 className="p-4 bg-violet-200">Hello, Welcome to Table Component!!</h1>
       <DataTable
         columns={columns}
         data={data}
