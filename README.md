@@ -1,54 +1,67 @@
 # pretty-react-table-kit
 
-A Super dynamic Table / Dashboard components that have a beautiful UI made in tailwindcss, built-in filters(individual and global) and pagination, comes with an optional side panel, that shows selected row data! Just throw in your data and use
+A super dynamic Table/Dashboard component with a beautiful UI made in Tailwind CSS. It features built-in filters (both individual and global), pagination, and an optional side panel that displays selected row data. Just plug in your data and use it!
 
-# USAGE & INSTALLATION
+## Beautiful UI
 
-```bash
-npm pretty-react-table-kit
-```
+Here is an example of the package in action:
 
-Please make sure you have all the dependencies installed, refer to package.json in demo folder to get a reference, you can clone and run demo folder to see demo usage
-
-\*\* Please make sure you are using the same version of every package listed in dependencies here or see peerDependencies in github repo for reference:
-"postcss": "^8",
-"tailwindcss": "^3.4.1",
-"typescript": "^5",
-"@tanstack/react-table": "^8.20.1",
-"clsx": "^2.1.1",
-"tailwind-merge": "^2.5.2",
-"date-fns": "^3.6.0",
-"react-icons": "^5.3.0",
-"lucide-react": "^0.427.0",
-"shadcn-ui": "^0.8.0",
-
-add this in postcss.config file:
-
-module.exports = {
-plugins: [
-require('tailwindcss'),
-require('autoprefixer'),
-],
-};
-
-add plugins: [require('tailwindcss-animate')], in your tailwind.config.ts file
+![Example Usage](https://github.com/karanVR/pretty-react-table-kit/blob/main/src/assets/DocumentationImg.png?raw=true)
 
 ## Features
 
-Dynamic Pagination
-Global Filter
-Individual Filter
-Pass Columns, Data (Column file example in demo folder)
-built in loader
-built in Date Picker
-Button for download
-Fully responsive
-Intersection Observer for mobile view for infinite scroll
-Beautiful UI
-Customizable Column wise styling
-Much more....
+- Dynamic Pagination
+- Global Filter
+- Individual Filter
+- Pass Columns and Data (see column file example in demo folder)
+- Built-in Loader
+- Built-in Date Picker
+- Button for Download
+- Fully Responsive
+- Intersection Observer for Mobile View for Infinite Scroll
+- Beautiful UI
+- Customizable Column-wise Styling
+- Much More...
 
-## Example
+## Usage & Installation
 
-Here is an example of the package in action:
-![Example Usage](https://github.com/karanVR/pretty-react-table-kit/blob/main/src/assets/DocumentationImg.png?raw=true)
+To install the package, run:
+
+````bash
+npm i pretty-react-table-kit
+```
+
+Please ensure you have all the necessary dependencies installed. Refer to the `package.json` in the demo folder for a reference. You can clone the demo folder to see the package in action.
+
+**Ensure you are using the same version of every package listed below or refer to the `peerDependencies` in the GitHub repo for guidance:**
+
+1. `postcss`: ^8
+2. `tailwindcss`: ^3.4.1
+3. `typescript`: ^5
+4. `@tanstack/react-table`: ^8.20.1
+5. `clsx`: ^2.1.1
+6. `tailwind-merge`: ^2.5.2
+7. `date-fns`: ^3.6.0
+8. `react-icons`: ^5.3.0
+9. `lucide-react`: ^0.427.0
+10. `shadcn-ui`: ^0.8.0
+
+Add the following to your `postcss.config.js` file:
+
+```js
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
+};
+
+````
+
+Add the following to your tailwind.config.ts file:
+
+```js
+module.exports = {
+  plugins: [require('tailwindcss-animate')],
+}
+```
